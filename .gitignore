@@ -1,3 +1,9 @@
+# Ignore witout extensions
+*
+!*.*
+!*/
+
+
 # Prerequisites
 *.d
 
@@ -30,4 +36,4 @@
 *.exe
 *.out
 *.app
-*
+
