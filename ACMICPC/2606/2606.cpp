@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> node[101];
 bool visited[101];
-int N, M, count = 0;
+int N, M, c = 0;
 
 void dfs(int id)
 {
@@ -14,7 +14,7 @@ void dfs(int id)
         if(!visited[node[id][i]])
         {
             dfs(node[id][i]);
-            count++;
+            c++;
         }
     }
 }
@@ -34,6 +34,6 @@ int main(void)
     }
 
     dfs(1);
-    printf("%d\n", count);
+    printf("%d\n", c);
     return 0;
 }
